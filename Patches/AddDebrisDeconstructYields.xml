@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Deconstruct refund is costList times resourcesFractionWhenDeconstructed.
+       These debris defs have no cost list, so the default 50% refunds nothing.
+       Fraction 1 makes the counts below the actual refund.
+       AncientCardboardBox is left unchanged: cardboard has no resource. -->
+
+  <!-- Core -->
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName='AncientRazorWire']</xpath>
+    <value>
+      <costList>
+        <Steel>4</Steel>
+      </costList>
+      <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName='AncientSmallCrate']</xpath>
+    <value>
+      <costList>
+        <Steel>6</Steel>
+      </costList>
+      <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName='AncientBarrel' or defName='AncientWheel' or defName='AncientPipes' or defName='AncientFence' or defName='AncientToilet']</xpath>
+    <value>
+      <costList>
+        <Steel>8</Steel>
+      </costList>
+      <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName='AncientHydrant' or defName='AncientShoppingCart']</xpath>
+    <value>
+      <costList>
+        <Steel>10</Steel>
+      </costList>
+      <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName='AncientPostbox' or defName='AncientLargeCrate']</xpath>
+    <value>
+      <costList>
+        <Steel>12</Steel>
+      </costList>
+      <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName='AncientMilitaryCrate']</xpath>
+    <value>
+      <costList>
+        <Steel>15</Steel>
+      </costList>
+      <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName='AncientSpacerCrate']</xpath>
+    <value>
+      <costList>
+        <Steel>15</Steel>
+        <ComponentIndustrial>1</ComponentIndustrial>
+      </costList>
+      <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName='AncientLongCrate']</xpath>
+    <value>
+      <costList>
+        <Steel>18</Steel>
+      </costList>
+      <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName='AncientStorageCylinder']</xpath>
+    <value>
+      <costList>
+        <Steel>20</Steel>
+      </costList>
+      <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName='AncientRustedEngineBlock']</xpath>
+    <value>
+      <costList>
+        <Steel>20</Steel>
+        <ComponentIndustrial>1</ComponentIndustrial>
+      </costList>
+      <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName='AncientLockerBank' or defName='AncientGiantWheel']</xpath>
+    <value>
+      <costList>
+        <Steel>25</Steel>
+      </costList>
+      <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName='AncientPipelineSection']</xpath>
+    <value>
+      <costList>
+        <Steel>30</Steel>
+      </costList>
+      <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName='AncientLargeRustedEngineBlock']</xpath>
+    <value>
+      <costList>
+        <Steel>40</Steel>
+        <ComponentIndustrial>2</ComponentIndustrial>
+      </costList>
+      <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName='AncientMegaCannonBarrel']</xpath>
+    <value>
+      <costList>
+        <Steel>50</Steel>
+        <ComponentIndustrial>1</ComponentIndustrial>
+      </costList>
+      <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName='AncientCrate']</xpath>
+    <value>
+      <costList>
+        <WoodLog>12</WoodLog>
+      </costList>
+      <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName='AncientKitchenSink']</xpath>
+    <value>
+      <costList>
+        <Cloth>12</Cloth>
+      </costList>
+      <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName='AncientBed']</xpath>
+    <value>
+      <costList>
+        <Steel>15</Steel>
+        <Cloth>10</Cloth>
+      </costList>
+      <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName='AncientOperatingTable']</xpath>
+    <value>
+      <costList>
+        <Steel>20</Steel>
+        <ComponentIndustrial>1</ComponentIndustrial>
+      </costList>
+      <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName='AncientLamp' or defName='AncientMicrowave']</xpath>
+    <value>
+      <costList>
+        <Steel>8</Steel>
+        <ComponentIndustrial>1</ComponentIndustrial>
+      </costList>
+      <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName='AncientStove' or defName='AncientOven']</xpath>
+    <value>
+      <costList>
+        <Steel>12</Steel>
+        <ComponentIndustrial>1</ComponentIndustrial>
+      </costList>
+      <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName='AncientATM' or defName='AncientAirConditioner' or defName='AncientWashingMachine']</xpath>
+    <value>
+      <costList>
+        <Steel>15</Steel>
+        <ComponentIndustrial>1</ComponentIndustrial>
+      </costList>
+      <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName='AncientRefrigerator' or defName='AncientVendingMachine' or defName='AncientSecurityTurret']</xpath>
+    <value>
+      <costList>
+        <Steel>20</Steel>
+        <ComponentIndustrial>1</ComponentIndustrial>
+      </costList>
+      <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName='AncientGenerator']</xpath>
+    <value>
+      <costList>
+        <Steel>35</Steel>
+        <ComponentIndustrial>2</ComponentIndustrial>
+      </costList>
+      <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    </value>
+  </Operation>
+
+  <!-- Odyssey -->
+
+  <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Odyssey">
+    <xpath>Defs/ThingDef[defName='AncientPipe']</xpath>
+    <value>
+      <costList>
+        <Steel>4</Steel>
+      </costList>
+      <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Odyssey">
+    <xpath>Defs/ThingDef[defName='AncientAmmoStack']</xpath>
+    <value>
+      <costList>
+        <Steel>6</Steel>
+      </costList>
+      <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Odyssey">
+    <xpath>Defs/ThingDef[defName='AncientPlantPot']</xpath>
+    <value>
+      <costList>
+        <WoodLog>8</WoodLog>
+      </costList>
+      <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Odyssey">
+    <xpath>Defs/ThingDef[defName='AncientMetalCrate' or defName='AncientChembarrel']</xpath>
+    <value>
+      <costList>
+        <Steel>10</Steel>
+      </costList>
+      <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Odyssey">
+    <xpath>Defs/ThingDef[defName='AncientWoodenCrate']</xpath>
+    <value>
+      <costList>
+        <WoodLog>15</WoodLog>
+      </costList>
+      <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Odyssey">
+    <xpath>Defs/ThingDef[defName='AncientIndustrialShelf']</xpath>
+    <value>
+      <costList>
+        <Steel>15</Steel>
+      </costList>
+      <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Odyssey">
+    <xpath>Defs/ThingDef[defName='AncientCratePallet' or defName='AncientTableTailorHand']</xpath>
+    <value>
+      <costList>
+        <WoodLog>20</WoodLog>
+      </costList>
+      <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Odyssey">
+    <xpath>Defs/ThingDef[defName='AncientChembarrelPallet']</xpath>
+    <value>
+      <costList>
+        <Steel>25</Steel>
+      </costList>
+      <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    </value>
+  </Operation>
+
+  <!-- Opened crate refunds only this cost list. Components come from CompLootSpawn, including if deconstructed while still sealed. -->
+  <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Odyssey">
+    <xpath>Defs/ThingDef[defName='AncientBox_ComponentIndustrial']</xpath>
+    <value>
+      <costList>
+        <Steel>8</Steel>
+      </costList>
+      <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Odyssey">
+    <xpath>Defs/ThingDef[defName='AncientMilitaryGeneratorSmall']</xpath>
+    <value>
+      <costList>
+        <Steel>15</Steel>
+        <ComponentIndustrial>1</ComponentIndustrial>
+      </costList>
+      <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Odyssey">
+    <xpath>Defs/ThingDef[defName='AncientTableTailorElectric']</xpath>
+    <value>
+      <costList>
+        <Steel>20</Steel>
+        <ComponentIndustrial>1</ComponentIndustrial>
+      </costList>
+      <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Odyssey">
+    <xpath>Defs/ThingDef[defName='AncientTableStoveElectric']</xpath>
+    <value>
+      <costList>
+        <Steel>25</Steel>
+        <ComponentIndustrial>1</ComponentIndustrial>
+      </costList>
+      <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    </value>
+  </Operation>
+
+  <!-- Biotech -->
+
+  <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Biotech">
+    <xpath>Defs/ThingDef[defName='AncientBandNode']</xpath>
+    <value>
+      <costList>
+        <Steel>30</Steel>
+        <ComponentIndustrial>2</ComponentIndustrial>
+      </costList>
+      <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Biotech">
+    <xpath>Defs/ThingDef[defName='AncientToxifierGenerator']</xpath>
+    <value>
+      <costList>
+        <Steel>40</Steel>
+        <ComponentIndustrial>2</ComponentIndustrial>
+      </costList>
+      <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    </value>
+  </Operation>
+
+  <!-- Vanilla Memes Expanded -->
+
+  <Operation Class="PatchOperationAdd" MayRequire="VanillaExpanded.VMemesE">
+    <xpath>Defs/ThingDef[defName='VME_AncientSpaceJunk']</xpath>
+    <value>
+      <costList>
+        <Steel>40</Steel>
+        <ComponentIndustrial>1</ComponentIndustrial>
+      </costList>
+      <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    </value>
+  </Operation>
+</Patch>

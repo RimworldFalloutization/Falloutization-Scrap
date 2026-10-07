@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <packageId>Falloutization.Scrap</packageId>
+    <author>Canenald</author>
+    <name>Falloutization: Scrap</name>
+    <description>Renames steel to scrap metal, renames ancient debris to pre-war, makes that debris yield salvage when deconstructed, and stops mech remains from spawning.</description>
+    <supportedVersions>
+        <li>1.6</li>
+    </supportedVersions>
+    <modDependencies>
+        <li>
+            <packageId>imranfish.xmlextensions</packageId>
+            <displayName>XML Extensions</displayName>
+            <downloadUrl>https://github.com/15adhami/XmlExtensions/releases</downloadUrl>
+        </li>
+    </modDependencies>
+    <loadAfter>
+        <li>Ludeon.RimWorld</li>
+        <li>Ludeon.RimWorld.Royalty</li>
+        <li>Ludeon.RimWorld.Ideology</li>
+        <li>Ludeon.RimWorld.Biotech</li>
+        <li>Ludeon.RimWorld.Anomaly</li>
+        <li>Ludeon.RimWorld.Odyssey</li>
+        <li>imranfish.xmlextensions</li>
+        <li>VanillaExpanded.VFEPropsandDecor</li>
+        <li>VanillaExpanded.VMemesE</li>
+    </loadAfter>
+    <modVersion>1.0</modVersion>
+</ModMetaData>
